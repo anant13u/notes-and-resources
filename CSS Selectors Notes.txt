@@ -6,3 +6,11 @@ The universal selector will select elements of any type, hence the name “unive
 * {
   color: purple;
 }
+
+
+ID Selectors:
+ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element:
+
+#title {
+  background-color: red;
+}
