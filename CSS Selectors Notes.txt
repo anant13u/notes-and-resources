@@ -14,3 +14,19 @@ ID selectors are similar to class selectors. They select an element with the giv
 #title {
   background-color: red;
 }
+
+Grouping Selector:
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+
+The above can be instead written like below:
+.unread {
+  color: white;
+  background-color: black;
+}
+
