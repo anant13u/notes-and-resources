@@ -30,3 +30,8 @@ The above can be instead written like below:
   background-color: black;
 }
 
+
+Chaining Selectors:
+.subsection.header {
+  color: red;
+}
