@@ -1,0 +1,4 @@
+How do I code against one github repo on 2 computers?
+
+https://stackoverflow.com/a/6012112
+https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/more_advanced_github.html
