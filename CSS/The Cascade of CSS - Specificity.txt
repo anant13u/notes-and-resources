@@ -1,0 +1,129 @@
+The Cascade of CSS
+https://www.theodinproject.com/lessons/foundations-css-foundations#the-cascade-of-css
+https://wattenberger.com/blog/css-cascade
+
+
+The cascade is what determines which rules actually get applied to our HTML. 
+There are different factors that the cascade uses to determine this.
+
+Specificity:
+
+A CSS declaration that is more specific will take precedence over less specific ones. 
+Inline styles, have the highest specificity compared to selectors, while each type of selector has its own specificity level 
+that contributes to how specific a declaration is. 
+Other selectors contribute to specificity, but we’re focusing only on the ones mentioned in this lesson:
+
+1) ID selectors (most specific selector)
+2) Class selectors
+3) Type selectors
+
+Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it, sort of like 
+a tie-breaker. 
+An ID selector will always beat any number of class selectors, a class selector will always beat any number of type selectors, 
+and a type selector will always beat any number of anything less specific than it. 
+When no declaration has a selector with a higher specificity, a larger amount of a single selector will beat a smaller amount of that same selector.
+
+<!-- index.html -->
+
+<div class="main">
+  <div class="list subsection"></div>
+</div>
+
+/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+
+In the example above, both rules are using only class selectors, but rule 2 is more specific because it is using more class 
+selectors, so the color: red; declaration would take precedence.
+
+
+
+Now, let’s change things a little bit:
+
+<!-- index.html -->
+
+<div class="main">
+  <div class="list" id="subsection"></div>
+</div>
+/* rule 1 */
+#subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+In the example above, despite rule 2 having more class selectors than ID selectors, rule 1 is more specific because ID beats class. 
+In this case, the color: blue; declaration would take precedence.
+
+
+
+/* rule 1 */
+#subsection .list {
+  background-color: yellow;
+  color: blue;
+}
+
+/* rule 2 */
+#subsection .main .list {
+  color: red;
+}
+In this final example, both rules are using ID and class selectors, so neither rule is using a more specific selector than the other. 
+The cascade then checks the amounts of each selector type. Both rules only have one ID selector, but rule 2 has more class selectors, 
+so rule 2 has a higher specificity!
+
+While the color: red declaration would take precedence, the background-color: yellow declaration would still be applied since there’s 
+no conflicting declaration for it.
+
+Note: When comparing selectors, you may come across special symbols for the universal selector (*) as well as combinators (+, ~, >, and 
+an empty space). These symbols do not add any specificity in and of themselves.
+
+
+
+/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class .second-class {
+  font-size: 24px;
+}
+Here both rule 1 and rule 2 have the same specificity. Rule 1 uses a chaining selector (no space) and rule 2 uses a descendant 
+combinator (the empty space). But both rules have two classes and the combinator symbol itself does not add to the specificity.
+
+
+
+/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class > .second-class {
+  font-size: 24px;
+}
+This example shows the same thing. Even though rule 2 is using a child combinator (>), this does not change the specificity value. 
+Both rules still have two classes so they have the same specificity values.
+
+
+
+/* rule 1 */
+* {
+  color: black;
+}
+
+/* rule 2 */
+h1 {
+  color: orange;
+}
+In this example, rule 2 would have higher specificity and the orange value would take precedence for this element. Rule 2 uses a 
+type selector, which has the lowest specificity value. But rule 1 uses the universal selector (*) which has no specificity value.
+
