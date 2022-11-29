@@ -27,6 +27,7 @@ since that declaration directly targets it, while color: red from the parent is 
 
 
 
+
 Rule Order
 
 The final factor, the end of the line, the tie-breaker of the tie-breaker. Let’s say that after every other factor has been 

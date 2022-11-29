@@ -38,7 +38,8 @@ closing curly braces, which create a “declaration block”. Finally, we place 
 color: white; is one declaration, with color being the property and white being the value, and background-color: black; is 
 another declaration.
 
-A note on file names: styles.css is just what we went with as the file name here. You can name the file whatever you want as long as the file type is .css, though “style” or “styles” is most commonly used.
+A note on file names: styles.css is just what we went with as the file name here. You can name the file whatever you want as 
+long as the file type is .css, though “style” or “styles” is most commonly used.
 
 A couple of the pros to this method are:
 
