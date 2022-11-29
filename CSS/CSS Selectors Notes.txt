@@ -1,22 +1,29 @@
 Selectors in CSS:
 
 
+
 Universal Selector:
 
-The universal selector will select elements of any type, hence the name “universal”, and the syntax for it is a simple asterisk. In the example below, every element would have the color: purple; style applied to it.
+The universal selector will select elements of any type, hence the name “universal”, and the syntax for it is a simple 
+asterisk. In the example below, every element would have the color: purple; style applied to it.
 
 * {
   color: purple;
 }
 
 
+
+
 ID Selectors:
 
-ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element:
+ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place 
+on an HTML element:
 
 #title {
   background-color: red;
 }
+
+
 
 
 Grouping Selector:
@@ -35,6 +42,8 @@ The above can be instead written like below:
   color: white;
   background-color: black;
 }
+
+
 
 
 Chaining Selectors:
@@ -57,6 +66,8 @@ You can take the two elements above and combine them with the following:
 .subsection#preview {
   color: blue;
 }
+
+
 
 
 Descendant Combinator:
