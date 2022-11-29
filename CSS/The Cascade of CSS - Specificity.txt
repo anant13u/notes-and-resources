@@ -17,11 +17,12 @@ Other selectors contribute to specificity, but we’re focusing only on the ones
 2) Class selectors
 3) Type selectors
 
-Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it, sort of like 
-a tie-breaker. 
-An ID selector will always beat any number of class selectors, a class selector will always beat any number of type selectors, 
-and a type selector will always beat any number of anything less specific than it. 
-When no declaration has a selector with a higher specificity, a larger amount of a single selector will beat a smaller amount of that same selector.
+Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it, 
+sort of like a tie-breaker. 
+An ID selector will always beat any number of class selectors, a class selector will always beat any number of 
+type selectors, and a type selector will always beat any number of anything less specific than it. 
+When no declaration has a selector with a higher specificity, a larger amount of a single selector will beat a 
+smaller amount of that same selector.
 
 <!-- index.html -->
 
@@ -75,15 +76,15 @@ In this case, the color: blue; declaration would take precedence.
 #subsection .main .list {
   color: red;
 }
-In this final example, both rules are using ID and class selectors, so neither rule is using a more specific selector than the other. 
-The cascade then checks the amounts of each selector type. Both rules only have one ID selector, but rule 2 has more class selectors, 
-so rule 2 has a higher specificity!
+In this final example, both rules are using ID and class selectors, so neither rule is using a more specific selector 
+than the other. The cascade then checks the amounts of each selector type. Both rules only have one ID selector, but 
+rule 2 has more class selectors, so rule 2 has a higher specificity!
 
-While the color: red declaration would take precedence, the background-color: yellow declaration would still be applied since there’s 
-no conflicting declaration for it.
+While the color: red declaration would take precedence, the background-color: yellow declaration would still be applied since 
+there’s no conflicting declaration for it.
 
-Note: When comparing selectors, you may come across special symbols for the universal selector (*) as well as combinators (+, ~, >, and 
-an empty space). These symbols do not add any specificity in and of themselves.
+Note: When comparing selectors, you may come across special symbols for the universal selector (*) as well as combinators 
+(+, ~, >, and an empty space). These symbols do not add any specificity in and of themselves.
 
 
 
