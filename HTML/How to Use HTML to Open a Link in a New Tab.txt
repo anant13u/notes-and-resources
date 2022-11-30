@@ -1,0 +1,26 @@
+How to Use HTML to Open a Link in a New Tab
+
+https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
+
+
+The Target Attribute:
+This attribute tells the browser how to open the link.
+
+To open a link in a new tab, just set the target attribute to _blank:
+
+<p>Check out <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</p>
+Now when someone clicks on the link, it will open up in a new tab, or possibly a new window depending on the 
+person's browser settings.
+
+
+Security concerns with target="_blank":
+I strongly recommend that you always add rel="noreferrer noopener" to the anchor element whenever you use 
+the target attribute:
+
+<p>Check out <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>.</p>
+This results in the following output:
+
+Check out freeCodeCamp.
+
+The rel attribute sets the relationship between your page and the linked URL. Setting it to noopener noreferrer 
+is to prevent a type of phishing known as tabnabbing.
