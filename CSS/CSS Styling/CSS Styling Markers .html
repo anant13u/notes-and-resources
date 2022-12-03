@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>    
 
     <h2>Different types of stylings in CSS:</h2>
@@ -14,87 +16,123 @@
     <ul>
         <li><b>`div`: a red background, white text, a font size of 32px, center aligned, and bold</b></li>
 
-        div {<br>
-            background-color: red;<br>
-            color: white;<br>
-            font-size: 32px;<br>
-            text-align: center;<br>
-            font-weight: bold;<br>
-        }<br><br>
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    div>Style me via the external method!/div><br>
+    <b class="code-header">CSS Code:</b>
+    div {
+         background-color: red;
+         color: white;
+         font-size: 32px;
+         text-align: center;
+         font-weight: bold;
+        }
+        </code></pre>
         
                 
         <b><li>`p`: a green background, white text, and a font size of 18px</li></b>
-        background-color: green;<br>
-        color: white;<br>
-        font-size: 18px;<br><br>
+
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    p>I would like to be styled with the internal method, please./p><br>
+    <b class="code-header">CSS Code:</b>
+    background-color: green;
+    color: white;
+    font-size: 18px;
+        </code></pre>
                 
         
         <b><li>`button`: an orange background and a font size of 18px</li></b>
-        button style="background-color: orange;font-size: 18px;">Inline Method/button><br><br>
+
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    button style="background-color: orange;font-size: 18px;">Inline Method/button> <br>
+    <b>No CSS Code</b> for this instance as the Inline method is used to style the element.
+        </code></pre>
+
+
         <img src="CSS1.png" alt=""><br>
         
         
         
         <b><li>All odd numbered elements: a light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans`
         with `sans-serif` as a fallback.</li></b>
+
         <pre><code>
     <b class="code-header">HTML Code:</b>
     p class="odd-numbers">Number 1 - I'm a class!/p
     p class="odd-numbers num3">Number 3 - I'm a class, but cooler!
-    p class="odd-numbers">Number 5 - I'm a class!
-
+    p class="odd-numbers">Number 5 - I'm a class!<br>
     <b class="code-header">CSS Code:</b>
     .odd-numbers {
-        background-color: pink;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
+                  background-color: pink;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                 }
         </code></pre>
         
         
         <b><li> **The second element**: blue text and a font size of 36px </li></b>
-        div id="num2">Number 2 - I'm one ID./div <br>
-        #num2 { <br>
-            color: blue; <br>
-            font-size: 36px; <br>
-        } <br><br>
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    div id="num2">Number 2 - I'm one ID./div <br>
+    <b class="code-header">CSS Code:</b>
+    #num2 {
+           color: blue;
+           font-size: 36px;
+          }
+        </code></pre>
+
+
         <b><li> **The fourth element**: a light green background, a font size of 24px, and bold </li></b>
-        div id="num4">Number 4 - I'm another ID./div <br>
-        #num4 { <br>
-            background-color: lightgreen; <br>
-            font-size: 24px; <br>
-            font-weight: bold; <br>
-        } <br><br>
+
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    div id="num4">Number 4 - I'm another ID./div <br>
+    <b class="code-header">CSS Code:</b>
+    #num4 {
+           background-color: lightgreen;
+           font-size: 24px;
+           font-weight: bold;
+          }
+    </code></pre>
                 
         
         <b><li> **The third element**: in addition to the styles for all odd numbered elements, add a font size of 24px</li></b>
-        p class="odd-numbers num3">Number 3 - I'm a class, but cooler!/p <br>
-        .num3 { <br>
-            font-size: 24px; <br>
-        } <br><br>
+
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    p class="odd-numbers num3">Number 3 - I'm a class, but cooler!/p <br>
+    <b class="code-header">CSS Code:</b>
+    .num3 {
+           font-size: 24px;
+          }
+    </code></pre>
+
+
         <img src="CSS2.png" alt="">
         
 
         <b><li>**The first element**: a black background and white text</li></b>
+
         <pre><code>
     <b class="code-header">HTML Code:</b>
-    button class="B1">Click Me!/button
-
+    button class="B1">Click Me!/button<br>
     <b class="code-header">CSS Code:</b>
     .B1 {
-        background-color: black;
-        color: white;
+         background-color: black;
+         color: white;
         }
         </code></pre>
 
 
         <b><li>**The second element**: a yellow background</li></b>
+
         <pre><code>
     <b class="code-header">HTML Code:</b>
-    button class="B2">No, Click Me!/button
-
+    button class="B2">No, Click Me!/button<br>
     <b class="code-header">CSS Code:</b>
     .B2 {
-        background-color: yellow;
+         background-color: yellow;
         }
         </code></pre>
 
@@ -103,15 +141,17 @@
         <pre><code>
     <b class="code-header">HTML Code:</b>
     button class="B1">Click Me!/button    
-    button class="B2">No, Click Me!/button    
-
+    button class="B2">No, Click Me!/button<br>
     <b class="code-header">CSS Code:</b>
     .B1, 
     .B2 {
-        font-size: 28px;
-        font-family: Helvetica, 'Times New Roman', sans-serif;
+         font-size: 28px;
+         font-family: Helvetica, 'Times New Roman', sans-serif;
         }
         </code></pre>
+
+
+        <img src="CSS3.png" alt="">
 
 
 
