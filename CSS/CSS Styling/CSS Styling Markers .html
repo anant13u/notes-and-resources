@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+
+    <h2>Different types of stylings in CSS:</h2>
+    <ul>
+
+        <li><b>`div`: a red background, white text, a font size of 32px, center aligned, and bold</b></li>
+
+        div {<br>
+            background-color: red;<br>
+            color: white;<br>
+            font-size: 32px;<br>
+            text-align: center;<br>
+            font-weight: bold;<br>
+        }<br><br>
+        
+                
+        <b><li>`p`: a green background, white text, and a font size of 18px</li></b>
+        background-color: green;<br>
+        color: white;<br>
+        font-size: 18px;<br><br>
+                
+        
+        <b><li>`button`: an orange background and a font size of 18px</li></b>
+        button style="background-color: orange;font-size: 18px;">Inline Method/button><br><br>
+        <img src="CSS1.png" alt=""><br>
+        
+        
+        
+        <b><li>All odd numbered elements: a light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans`
+        with `sans-serif` as a fallback</li></b>
+        <pre><code>
+    <b class="code-header">HTML Code:</b>
+    p class="odd-numbers">Number 1 - I'm a class!/p
+    p class="odd-numbers num3">Number 3 - I'm a class, but cooler!    
+    p class="odd-numbers">Number 5 - I'm a class!
+
+    <b class="code-header">CSS Code:</b>
+    .odd-numbers {
+        background-color: pink;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </code></pre>
+        
+        
+        <b><li> **The second element**: blue text and a font size of 36px </li></b>
+        div id="num2">Number 2 - I'm one ID./div <br>
+        #num2 { <br>
+            color: blue; <br>
+            font-size: 36px; <br>
+        } <br><br>
+        <b><li> **The fourth element**: a light green background, a font size of 24px, and bold </li></b>
+        div id="num4">Number 4 - I'm another ID./div <br>
+        #num4 { <br>
+            background-color: lightgreen; <br>
+            font-size: 24px; <br>
+            font-weight: bold; <br>
+        } <br><br>
+                
+        
+        <b><li> **The third element**: in addition to the styles for all odd numbered elements, add a font size of 24px</li></b>
+        p class="odd-numbers num3">Number 3 - I'm a class, but cooler!/p <br>
+        .num3 { <br>
+            font-size: 24px; <br>
+        } <br><br>
+        <img src="CSS2.png" alt="">
+        
+    </ul>
+        
+        
+        
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
