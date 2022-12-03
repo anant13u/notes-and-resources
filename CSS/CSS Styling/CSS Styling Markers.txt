@@ -1,5 +1,4 @@
 * `div`: a red background, white text, a font size of 32px, center aligned, and bold
-- Does the `div` element have CSS added via the external method?
         div {
             background-color: red;
             color: white;
@@ -7,6 +6,7 @@
             text-align: center;
             font-weight: bold;
             }
+- Does the `div` element have CSS added via the external method?
 
 
 
