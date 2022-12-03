@@ -8,10 +8,17 @@ pre code {
     /* border-color: blue; */
     
     margin: 5px;
-    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    /* I didn't include any padding for the left as none was required. */
     display: inline-block;
 }
 
 .code-header {
     color: rgb(46, 44, 44);
+}
+
+h2 {
+    text-indent: 20px;
 }
