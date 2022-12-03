@@ -1,0 +1,13 @@
+pre code {
+    color: white;
+    display: inline-block;
+    /* display: flexbox; */
+    background-color: rgba(167, 155, 155, 0.781);
+    border: 1px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.code-header {
+    color: rgb(231, 219, 219);
+}
