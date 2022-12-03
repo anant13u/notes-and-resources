@@ -1,0 +1,73 @@
+* `div`: a red background, white text, a font size of 32px, center aligned, and bold
+- Does the `div` element have CSS added via the external method?
+        div {
+            background-color: red;
+            color: white;
+            font-size: 32px;
+            text-align: center;
+            font-weight: bold;
+            }
+
+
+
+* `p`: a green background, white text, and a font size of 18px
+        background-color: green;
+        color: white;
+        font-size: 18px;
+- Does the `p` element have CSS added via the internal method?
+
+
+
+* `button`: an orange background and a font size of 18px
+        <button style="background-color: orange;font-size: 18px;">Inline Method</button>
+- Does the `button` element have CSS added via the inline method?
+
+
+
+* **All odd numbered elements**: a light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` 
+with `sans-serif` as a fallback
+    <p class="odd-numbers">Number 1 - I'm a class!</p>
+    <p class="odd-numbers">Number 5 - I'm a class!</p>
+    <p class="odd-numbers num3">Number 3 - I'm a class, but cooler!</p>
+        .odd-numbers {
+            background-color: pink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    }
+- Do the odd numbered `p` elements share a class?
+
+
+
+* **The second element**: blue text and a font size of 36px
+    <div id="num2">Number 2 - I'm one ID.</div>
+        #num2 {
+            color: blue;
+            font-size: 36px;
+        }
+* **The fourth element**: a light green background, a font size of 24px, and bold
+    <div id="num4">Number 4 - I'm another ID.</div>
+        #num4 {
+            background-color: lightgreen;
+            font-size: 24px;
+            font-weight: bold;
+        }
+- Do the even numbered `div` elements have unique IDs?
+
+
+
+* **The third element**: in addition to the styles for all odd numbered elements, add a font size of 24px
+    <p class="odd-numbers num3">Number 3 - I'm a class, but cooler!</p>
+        .num3 {
+            font-size: 24px;
+        }
+- Does the Number 3 element have multiple classes?
+
+
+
+
+
+
+
+
+
+
+
