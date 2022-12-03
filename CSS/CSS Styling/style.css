@@ -1,13 +1,14 @@
 pre code {
-    color: white;
+    color: black;
     display: inline-block;
     /* display: flexbox; */
-    background-color: rgba(167, 155, 155, 0.781);
+    background-color: rgb(220, 220, 220);
     border: 1px;
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* padding: 5px; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: monospace;
 }
 
 .code-header {
-    color: rgb(231, 219, 219);
+    color: rgb(46, 44, 44);
 }
