@@ -1,0 +1,19 @@
+Type Selectors
+
+
+A type selector (or element selector) will select all elements of the given element type, and the 
+syntax is just the name of the element:
+
+<!-- index.html -->
+
+<div>Hello, World!</div>
+<div>Hello again!</div>
+<p>Hi...</p>
+<div>Okay, bye.</div>
+/* styles.css */
+
+
+div {
+  color: white;
+}
+Here, all three <div> elements would be selected, while the <p> element wouldn’t be.
