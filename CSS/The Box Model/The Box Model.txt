@@ -1,0 +1,50 @@
+The Box Model
+
+
+The first important concept that you need to understand to be successful in CSS is the box 
+model. It isn’t complicated, but skipping over it now will cause you much frustration down the line.
+
+Every single thing on a webpage is a rectangular box. These boxes can have other boxes in them 
+and can sit alongside one another. You can get a rough idea of how this works by sticking a border 
+on every item on the page like this:
+
+* {
+  border: 2px solid red;
+}
+
+The only real complication here is that there are many ways to manipulate the size of these boxes, 
+and the space between them, using padding, margin, and border. The assigned articles go into more 
+depth on this concept, but to sum it up briefly:
+
+
+
+Margin: (https://css-tricks.com/almanac/properties/m/margin/)
+Margin increases the space between a box and any others that sit next to it.
+The margin property defines the outermost portion of the box model, creating space around an element, outside of any defined borders.
+Margins are set using lengths, percentages, or the keyword auto and can have negative values.
+
+Margin is a shorthand property and accepts up to four values, shown here:
+
+.box {
+    margin: <margin-top> || <margin-right> || <margin-bottom> || <margin-left>
+}</margin-left></margin-bottom></margin-right></margin-top>
+
+
+
+Border: (https://css-tricks.com/almanac/properties/b/border/)
+Border adds space (even if it’s only a pixel or two) between the margin and the padding.
+The border property is a shorthand syntax in CSS that accepts multiple values for drawing a line around the element it is applied to.
+Syntax:
+border: <line-width> || <line-style> || <color>
+
+.box {
+  border: 3px solid red;
+  height: 200px;
+  width: 200px;
+}
+
+
+
+Padding:
+Padding increases the space between the edge of a box and the content inside of it.
+
