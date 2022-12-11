@@ -1,0 +1,11 @@
+p, img {
+    /* margin-left: 35px;
+    margin-bottom: 20px; */
+    margin: 20px 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 35px;
+}
