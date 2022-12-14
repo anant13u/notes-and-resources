@@ -9,3 +9,8 @@ p, img {
 h1 {
     margin: 35px;
 }
+
+.highlight-text {
+    background-color: rgb(209, 209, 209);
+    font-style: italic;
+}
