@@ -1,5 +1,6 @@
 Chaining Selectors
 
+https://css-tricks.com/multiple-class-id-selectors/
 
 Another way to use selectors is to chain them as a list without any separation. 
 Let’s say we had the following HTML:
