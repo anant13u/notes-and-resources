@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: #34638d;
+    background-color: #97dbc4;
+    padding: 20px 0;
+}
+
+.menu {
+    width: 500px;
+}
