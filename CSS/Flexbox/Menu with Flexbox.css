@@ -5,11 +5,26 @@
 }
 
 .menu-container {
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-end; */
     color: #34638d;
     background-color: #97dbc4;
     padding: 20px 0;
 }
 
 .menu {
+    display: flex;
+    justify-content: space-around;
     width: 500px;
+    border: 1px solid;
 }
+
+/* .menu-item {
+    border: 1px solid;
+    padding: 5px 10px;
+} */
+
+/* .date.menu-item {
+    border: 2px solid;
+} */
