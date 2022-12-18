@@ -19,6 +19,17 @@
     justify-content: space-between;
     width: 500px;
     border: 1px solid;
+    padding: 5px;
+}
+
+.links {
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
 }
 
 /* .menu-item {
