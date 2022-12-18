@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     /* justify-content: flex-end; */
-    color: #34638d;
-    background-color: #97dbc4;
+    color: #fff;
+    background-color: #5995DA;
     padding: 20px 0;
 }
 
@@ -31,6 +31,26 @@
 .login {
     margin-left: 20px;
 }
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    /* height: 200px; */
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .logo, .social, .subscribe {
+    border: 1px solid;
+} */
 
 /* .menu-item {
     border: 1px solid;
