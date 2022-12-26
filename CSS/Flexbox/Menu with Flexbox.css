@@ -16,7 +16,7 @@
 .menu {
     display: flex;
     /* justify-content: space-around; */
-    justify-content: space-between;
+    justify-content: space-around;
     width: 500px;
     border: 1px solid;
     padding: 10px 15px;
