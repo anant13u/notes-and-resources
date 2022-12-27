@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    border: 5px solid gray;
+    margin: 15px;
+    /* height: 80px; */
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-items: stretch; */
+    align-items: stretch;
+}
+
+.container-item {
+    background-color: pink;
+    font-size: 80px;
+    margin: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    padding: 15px 50px;
+    color: lightyellow;
+}
+
+* {
+    background-color: lightyellow;
+}
