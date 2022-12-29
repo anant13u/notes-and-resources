@@ -1,18 +1,24 @@
 .container {
     display: flex;
-    border: 5px solid gray;
-    margin: 15px;
-    /* height: 80px; */
-    justify-content: center;
+    /* border: 5px solid lightcoral; */
+    margin: 25px;
+    height: 200px;
+    /* justify-content: center; */
     /* align-items: center; */
     /* justify-items: stretch; */
-    align-items: stretch;
+    /* align-items: stretch; */
+    /* align-content: stretch; */
 }
 
 .container-item {
     background-color: pink;
-    font-size: 80px;
-    margin: 10px;
+    font-size: 50px;
+    /* margin: 10px; */
+    border: 5px solid salmon;
+    padding: 55px;
+    text-align: center;
+    width: 150px;
+    color: lightyellow;
     flex: 1;
     /* justify-content: center; */
     /* align-items: center; */
@@ -20,8 +26,9 @@
     /* align-items: center; */
     /* justify-content: center; */
     /* justify-content: space-around; */
-    padding: 15px 50px;
-    color: lightyellow;
+    /* padding: 15px 50px; */
+    /* display: inline-block; */
+    /* vertical-align: bottom; */
 }
 
 * {
