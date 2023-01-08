@@ -1,17 +1,22 @@
 .container {
     display: flex;
-    /* border: 5px solid lightcoral; */
     margin: 25px;
+    border: 5px solid lightcoral;
+    padding: 5px;
     height: 200px;
     /* justify-content: center; */
     /* align-items: center; */
     /* justify-items: stretch; */
     /* align-items: stretch; */
     /* align-content: stretch; */
+    justify-content:space-evenly;
 }
 
+/* For justify-content to work and justify the space items are taking, flex-grow needs to be 0 otherwise with flex-grow: 1 the items will  */
+/* already be spaced out. */
+
 .odd-container, .even-container {
-    flex: 1;
+    flex: 0 1 auto;
     padding: 55px;
     font-size: 50px;
     text-align: center;
