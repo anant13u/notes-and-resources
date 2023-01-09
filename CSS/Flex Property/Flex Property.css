@@ -26,12 +26,12 @@
 
 .odd-container {
     border: 5px solid purple;
-    background-color: cornflowerblue;
+    background-color: rgb(45, 61, 92);
 }
 
 .even-container {
     border: 5px solid salmon;
-    background-color: pink;
+    background-color: rgb(202, 57, 81);
 }
 
 * {
