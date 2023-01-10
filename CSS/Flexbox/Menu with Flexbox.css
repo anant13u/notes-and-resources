@@ -58,16 +58,15 @@
     width: 900px;
     height: 120px;
     display: flex;
-    /* flex: 1; */
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .header > * {
     /* display: flex; */
+    flex: 0 1 auto;
+    text-align: center;
     border: 2px solid saddlebrown;
-    /* flex: 1 1 auto; */
-    /* justify-content: space-evenly; */
 }
 
 /* .logo, .social, .subscribe {
