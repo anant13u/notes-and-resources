@@ -1,39 +1,49 @@
 .container {
-    display: flex;
-    margin: 25px;
-    border: 5px solid lightcoral;
-    padding: 5px;
-    height: 200px;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* justify-items: stretch; */
-    /* align-items: stretch; */
-    /* align-content: stretch; */
-    justify-content:space-evenly;
+  display: flex;
+  margin: 25px;
+  border: 5px solid lightcoral;
+  padding: 5px;
+  height: 250px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* text-align: center; */
 }
 
-/* For justify-content to work and justify the space items are taking, flex-grow needs to be 0 otherwise with flex-grow: 1 the items will  */
-/* already be spaced out. */
+/* For justify-content to work and justify the space items are taking, flex-grow needs to be 0 otherwise with flex-grow: 1 the items will 
+   already be spaced out. */
 
-.odd-container, .even-container {
-    flex: 0 1 auto;
-    padding: 55px;
-    font-size: 50px;
-    text-align: center;
-    width: 150px;
-    color: lightyellow;
+.odd-container,
+.even-container {
+  display: flex;
+  flex: 0 1 auto;
+  /* padding: 55px 0 0 0; */
+  font-size: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  /* min-width: 250px; */
+  width: 250px;
+  height: 150px;
+  color: lightyellow;
 }
 
 .odd-container {
-    border: 5px solid purple;
-    background-color: rgb(45, 61, 92);
+  border: 5px solid purple;
+  background-color: rgb(45, 61, 92);
 }
 
 .even-container {
-    border: 5px solid salmon;
-    background-color: rgb(202, 57, 81);
+  border: 5px solid salmon;
+  background-color: rgb(202, 57, 81);
+}
+
+.quote.odd-container {
+  font-size: 25px;
+  /* display: flex;
+  align-items: center; */
+  /* line-height: 100px; */
 }
 
 * {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
