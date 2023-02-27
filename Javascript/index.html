@@ -9,6 +9,8 @@
   </head>
   <body>
     <p id="test"></p>
+    <button>Start machine</button>
+    <!-- <p>The machine is stopped.</p> -->
     <script>
       // let firstNumber = 10;
       // let secondNumber = 3;
@@ -19,9 +21,27 @@
       let text = "";
       while (myNumber != Infinity) {
         myNumber = myNumber * myNumber;
-        text = text + myNumber + '${myNumber}' + ' * ${myNumber} is <br>';
+        text = text + myNumber + '<br>';
+        // + '${myNumber}' + ' * ${myNumber} is <br>'
       }
       document.getElementById("test").innerHTML = text;
+
+      const btn = document.querySelector('button')
+      const txt = document.querySelector('p')
+
+      btn.addEventListener('click', updateBtn)
+
+      function updateBtn() {
+        if (btn.textContent === 'Start Machine') {
+          btn.textContent = 'Stop Machine'
+          txt.textContent = 'The machine has started'
+        } else {
+          btn.textContent = 'Start Machine'
+          txt.textContent = 'The machine has stopped.'
+        }
+      }
+
+      
     </script>
   </body>
 </html>
