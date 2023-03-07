@@ -1,0 +1,12 @@
+.button-container {
+    border: 2px solid firebrick;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-button {
+    width: 80px;
+    height: 25px;
+}
