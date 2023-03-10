@@ -9,13 +9,13 @@
   </head>
   <body>
     <div class="addEventListenerContainer">
-        <h1>addEventListener() Syntax</h1>
+        <h2>addEventListener() Syntax</h2>
         <p>Here's the syntax:</p>
         <div class="js-code">target.<span class="js-function">addEventListener</span>(event, <span class="js-keyword">function</span>, useCapture)</div>
         
         <ul>
             <li><b>target:</b> the HTML element you wish to add your event handler to. This element exists as part of the Document Object Model (DOM) and you may wish to learn about how to select a DOM element.</li>
-            <li><b>event:</b> a string that specifies the name of the event. We already mentioned load and click events.</li>
+            <li><b>event:</b> a string that specifies the name of the event. We already mentioned <code>load</code> and <code>click</code> events.</li>
             <li><b>function:</b> specifies the function to run when the event is detected. This is the magic that can allow your web pages to change dynamically.</li>
             <li><b>useCapture:</b> an optional Boolean value (true or false) that specifies whether the event should be executed in the capturing or bubbling phase. In the case of nested HTML elements (such as an img within a div) with attached event handlers, this value determines which event gets executed first. By default, it's set to false which means that the innermost HTML event handler is executed first (bubbling phase).</li>
         </ul>
