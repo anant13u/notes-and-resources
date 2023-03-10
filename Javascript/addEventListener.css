@@ -1,0 +1,36 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.addEventListenerContainer {
+    margin: 0 0 0 25px;
+    border: 2px solid firebrick;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+.js-code {
+    padding: 20px;
+    background-color: #eeeef0;
+    font-size: 14px;
+}
+
+.js-function {
+    color: #dd4a68;
+}
+
+.js-keyword {
+    color: #07a;
+}
+
+h1 {
+    border: 2px solid firebrick;
+    /* margin: 0; */
+}
+
+li {
+    padding: 0 0 10px 0;
+    line-height: 1.5;
+}
