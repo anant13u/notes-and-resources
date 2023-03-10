@@ -11,7 +11,13 @@ body {
     width: 750px;
 }
 
+h2 {
+    border: 2px solid firebrick;
+    margin-bottom: 0;
+}
+
 .js-code {
+    margin: 10px 0;
     padding: 20px;
     background-color: #eeeef0;
     font-size: 14px;
@@ -25,9 +31,11 @@ body {
     color: #07a;
 }
 
-h1 {
-    border: 2px solid firebrick;
-    /* margin: 0; */
+code {
+    padding: 3px 9px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Roberto Mono', monospace;
+    background-color: #d0d0d5
 }
 
 li {
