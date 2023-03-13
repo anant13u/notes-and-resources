@@ -19,6 +19,7 @@ h2 {
 .js-code {
     margin: 10px 0;
     padding: 20px;
+    padding-left: 40px;
     background-color: #eeeef0;
     font-size: 14.5px;
 }
