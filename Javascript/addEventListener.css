@@ -22,6 +22,7 @@ h2 {
     padding-left: 40px;
     background-color: #eeeef0;
     font-size: 14.5px;
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
 }
 
 .js-function {
