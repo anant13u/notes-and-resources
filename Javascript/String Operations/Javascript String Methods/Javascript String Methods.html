@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Methods</title>
+</head>
+
+<body>
+    <h1>Javascript String Methods</h1>
+    <h2>The slice() Method</h2>
+
+    <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (starting digit) to <span id="slice_dest"></span> (end digit) is:
+    <span id="sliced-part"></span>
+
+        <script>
+            // let our_string='Please enter the string you want to slice: '
+            let our_string = prompt('Please enter the string you want to slice: ')
+            const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
+            const our_slice_dest = prompt('The digit where you want to end slicing the string: ')
+            let our_sliced_text = our_string.slice(slice_source, our_slice_dest)
+            document.getElementById('slice_source').innerHTML = our_slice_source
+            document.getElementById('slice_dest').innerHTML = our_slice_dest
+            document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
+        </script>
+</body>
+
+</html>
