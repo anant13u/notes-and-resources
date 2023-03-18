@@ -5,14 +5,14 @@ body {
 
 .addEventListenerContainer {
     margin: 0 0 0 25px;
-    border: 2px solid firebrick;
+    /* border: 2px solid firebrick; */
     display: flex;
     flex-direction: column;
     width: 750px;
 }
 
 h2 {
-    border: 2px solid firebrick;
+    /* border: 2px solid firebrick; */
     margin-bottom: 0;
 }
 
