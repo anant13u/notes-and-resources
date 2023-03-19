@@ -10,10 +10,17 @@
 
 <body>
     <h1>Javascript String Methods</h1>
-    <h2>The slice() Method</h2>
 
+    <h2>The slice() Method</h2>
     <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (starting digit) to <span id="slice_dest"></span> (end digit) is:
     <span id="sliced-part"></span>
+
+    <h2>Replacing string content</h2>
+    <p>The replace() method replaces a specified value with another value in a string.</p>
+    <p>The text entered by the user: <span id="entered-text"></span></p>
+    <p>The string that is to be replaced: <span id="stringToBeReplaced"></span></p>
+    <p>The string that is the replacement for above string: <span id="replacementString"></span></p>
+    <p>New text: <span id="newText"></span></p>
 
         <script>
             // let our_string='Please enter the string you want to slice: '
@@ -24,6 +31,15 @@
             document.getElementById('slice_source').innerHTML = our_slice_source
             document.getElementById('slice_dest').innerHTML = our_slice_dest
             document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
+
+            let our_string2 = prompt('Please enter any text:')
+            const stringToBeReplaced = prompt('Please enter the string that needs to be replaced:')
+            const replacementString = prompt('Please enter the string that is the replacement for above string:')
+            let newText = our_string2.replace(stringToBeReplaced,replacementString)
+            document.getElementById('entered-text').innerHTML=our_string2
+            document.getElementById('stringToBeReplaced').innerHTML=stringToBeReplaced
+            document.getElementById('replacementString').innerHTML=replacementString
+            document.getElementById('newText').innerHTML=newText
         </script>
 </body>
 
