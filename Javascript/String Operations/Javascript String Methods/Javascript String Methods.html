@@ -6,23 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS String Methods</title>
+    <link rel="stylesheet" href="Javascript String Methods.css">
 </head>
 
 <body>
     <h1>Javascript String Methods</h1>
 
+    <div class="methods-container">
+        <div class="methods-container1">
+            <p>String length</p>
+            <p>String slice()</p>
+            <p>String substring()</p>
+            <p>String substr()</p>
+            <p>String replace()</p>
+            <p>String replaceAll()</p>
+        </div>
+        <div class="methods-container2">
+            <p>String toUpperCase()</p>
+            <p>String toLowerCase()</p>
+            <p>String concat()</p>
+            <p>String trim()</p>
+            <p>String trimStart()</p>
+            <p>String trimEnd()</p>
+        </div>
+        <div class="methods-container3">
+            <p>String padStart()</p>
+            <p>String padEnd()</p>
+            <p>String charAt()</p>
+            <p>String charCodeAt()</p>
+            <p>String split()</p>
+        </div>
+    </div>
+
     <h2>The slice() Method</h2>
-    <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (starting digit) to <span id="slice_dest"></span> (end digit) is:
+    <p class="definition">slice() extracts a part of a string and returns the extracted part in a new string.
+    <p>Syntax: 
+    <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is:
     <span id="sliced-part"></span>
 
-    <h2>Replacing string content</h2>
-    <p>The replace() method replaces a specified value with another value in a string.</p>
-    <p>The text entered by the user: <span id="entered-text"></span></p>
-    <p>The string that is to be replaced: <span id="stringToBeReplaced"></span></p>
-    <p>The string that is the replacement for above string: <span id="replacementString"></span></p>
-    <p>New text: <span id="newText"></span></p>
+    <h2>Replacing string content with the replace() method</h2>
+    <p class="definition">The replace() method replaces a specified value with another value in a string.
+    <p>The text entered by the user: <b><span id="entered-text"></span></b>
+    <p>The string that is to be replaced: <b><span id="stringToBeReplaced"></span></b>
+    <p>The string that is the replacement for above string: <b><span id="replacementString"></span></b>
+    <p>New text: <b><span id="newText"></span></b>
 
         <script>
+            // Code for slice() method:
             // let our_string='Please enter the string you want to slice: '
             let our_string = prompt('Please enter the string you want to slice: ')
             const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
@@ -31,7 +61,9 @@
             document.getElementById('slice_source').innerHTML = our_slice_source
             document.getElementById('slice_dest').innerHTML = our_slice_dest
             document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
-
+            
+            // Code for replace() method:
+            // Replacing string content
             let our_string2 = prompt('Please enter any text:')
             const stringToBeReplaced = prompt('Please enter the string that needs to be replaced:')
             const replacementString = prompt('Please enter the string that is the replacement for above string:')
