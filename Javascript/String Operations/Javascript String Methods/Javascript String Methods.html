@@ -40,9 +40,9 @@
 
     <h2>The slice() Method</h2>
     <p class="definition">slice() extracts a part of a string and returns the extracted part in a new string.
-    <p>Syntax: 
+    <p>Syntax:
     <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is:
-    <span id="sliced-part"></span>
+        <span id="sliced-part"></span>
 
     <h2>Replacing string content with the replace() method</h2>
     <p class="definition">The replace() method replaces a specified value with another value in a string.
@@ -50,6 +50,7 @@
     <p>The string that is to be replaced: <b><span id="stringToBeReplaced"></span></b>
     <p>The string that is the replacement for above string: <b><span id="replacementString"></span></b>
     <p>New text: <b><span id="newText"></span></b>
+    <button id="replace-button" onclick="replace_text()">Replace Text</button>
 
         <script>
             // Code for slice() method:
@@ -61,17 +62,23 @@
             document.getElementById('slice_source').innerHTML = our_slice_source
             document.getElementById('slice_dest').innerHTML = our_slice_dest
             document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
-            
+
             // Code for replace() method:
             // Replacing string content
-            let our_string2 = prompt('Please enter any text:')
-            const stringToBeReplaced = prompt('Please enter the string that needs to be replaced:')
-            const replacementString = prompt('Please enter the string that is the replacement for above string:')
-            let newText = our_string2.replace(stringToBeReplaced,replacementString)
-            document.getElementById('entered-text').innerHTML=our_string2
-            document.getElementById('stringToBeReplaced').innerHTML=stringToBeReplaced
-            document.getElementById('replacementString').innerHTML=replacementString
-            document.getElementById('newText').innerHTML=newText
+            function replace_text() {
+                const btn = document.querySelector('Button')
+
+                let our_string2 = prompt('Please enter any text:')
+                const stringToBeReplaced = prompt('Please enter the string that needs to be replaced:')
+                const replacementString = prompt('Please enter the string that is the replacement for above string:')
+                let newText = our_string2.replace(stringToBeReplaced, replacementString)
+                document.getElementById('entered-text').innerHTML = our_string2
+                document.getElementById('stringToBeReplaced').innerHTML = stringToBeReplaced
+                document.getElementById('replacementString').innerHTML = replacementString
+                document.getElementById('newText').innerHTML = newText
+            }
+
+            // document.addEventListener('click', replace_text)
         </script>
 </body>
 
