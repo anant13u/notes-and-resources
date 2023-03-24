@@ -41,27 +41,33 @@
     <h2>The slice() Method</h2>
     <p class="definition">slice() extracts a part of a string and returns the extracted part in a new string.
     <p>Syntax:
-    <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is:
-        <span id="sliced-part"></span>
+    <p>Text entered by the user: <span id="our_string"></span></p>
+    <p>Start digit for slicing: <span id="slice_source"></span></p>
+    <p>End digit for slicing: <span id="slice_dest"></span></p>
+    <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is: <span id="sliced-part"></span><br><br>
+    <button onclick="slice_text()">Slice Text</button>
 
     <h2>Replacing string content with the replace() method</h2>
     <p class="definition">The replace() method replaces a specified value with another value in a string.
     <p>The text entered by the user: <b><span id="entered-text"></span></b>
     <p>The string that is to be replaced: <b><span id="stringToBeReplaced"></span></b>
     <p>The string that is the replacement for above string: <b><span id="replacementString"></span></b>
-    <p>New text: <b><span id="newText"></span></b>
+    <p>New text: <b><span id="newText"></span></b><br>
     <button id="replace-button" onclick="replace_text()">Replace Text</button>
 
         <script>
             // Code for slice() method:
             // let our_string='Please enter the string you want to slice: '
-            let our_string = prompt('Please enter the string you want to slice: ')
-            const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
-            const our_slice_dest = prompt('The digit where you want to end slicing the string: ')
-            let our_sliced_text = our_string.slice(slice_source, our_slice_dest)
-            document.getElementById('slice_source').innerHTML = our_slice_source
-            document.getElementById('slice_dest').innerHTML = our_slice_dest
-            document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
+            function slice_text() {
+                let our_string = prompt('Please enter the string you want to slice: ')
+                const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
+                const our_slice_dest = prompt('The digit where you want to end slicing the string: ')
+                let our_sliced_text = our_string.slice(slice_source, our_slice_dest)
+                document.getElementById('our_string').innerHTML=our_string
+                document.getElementById('slice_source').innerHTML = our_slice_source
+                document.getElementById('slice_dest').innerHTML = our_slice_dest
+                document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
+            }
 
             // Code for replace() method:
             // Replacing string content
