@@ -39,21 +39,22 @@
     </div>
 
     <h2>The slice() Method</h2>
-    <p class="definition">slice() extracts a part of a string and returns the extracted part in a new string.
-    <p>Syntax:
+    <p class="definition-syntax">slice() extracts a part of a string and returns the extracted part in a new string.
+    <p class="definition-syntax">Syntax: string.slice(start, end)</p>
     <p>Text entered by the user: <span id="our_string"></span></p>
     <p>Start digit for slicing: <span id="slice_source"></span></p>
     <p>End digit for slicing: <span id="slice_dest"></span></p>
     <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is: <span id="sliced-part"></span><br><br>
-    <button onclick="slice_text()">Slice Text</button>
+    <button class="method-button" onclick="slice_text()">Slice Text</button>
 
     <h2>Replacing string content with the replace() method</h2>
-    <p class="definition">The replace() method replaces a specified value with another value in a string.
+    <p class="definition-syntax">The replace() method replaces a specified value with another value in a string.
+    <p class="definition-syntax">Syntax: string.replace(searchValue, newValue)</p>
     <p>The text entered by the user: <b><span id="entered-text"></span></b>
     <p>The string that is to be replaced: <b><span id="stringToBeReplaced"></span></b>
     <p>The string that is the replacement for above string: <b><span id="replacementString"></span></b>
-    <p>New text: <b><span id="newText"></span></b><br>
-    <button id="replace-button" onclick="replace_text()">Replace Text</button>
+    <p>New text: <b><span id="newText"></span></b><br><br>
+    <button class="method-button" id="replace-button" onclick="replace_text()">Replace Text</button>
 
         <script>
             // Code for slice() method:
