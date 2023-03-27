@@ -1,5 +1,5 @@
 body {
-    margin-left: 35px;
+    margin-left: 50px;
     /* border: 2px solid firebrick; */
     font-size: 17px;
 }
@@ -7,7 +7,7 @@ body {
 h2 {
     margin-top: 35px;
 }
-.definition {
+.definition-syntax {
     /* line-height: 2; */
     margin: 20px 0;
     /* border: 2px solid firebrick; */
@@ -18,7 +18,7 @@ h2 {
     display: flex;
     gap: 50px;
     font-weight: bold;
-    /* border: 2px solid firebrick; */
+    border: 2px solid firebrick;
 }
 
 .methods-container1 > *, .methods-container2 > *, .methods-container3 > * {
@@ -30,4 +30,21 @@ h2 {
 .methods-container1, .methods-container2, .methods-container3 {
     display: flex;
     flex-direction: column;
+}
+
+.method-button {
+    /* margin: 0 200px; */
+    border: none;
+    border-radius: 7px;
+    padding: 8px 13px;
+    /* background-color: #0a0a23; */
+    color: #4e4646;
+    font-weight: bold;
+}
+
+.method-button:hover {
+    /* background-color: #002ead; */
+    background-color: #0a0a23;
+    color: #fff;
+    transition: 0.7s;
 }
