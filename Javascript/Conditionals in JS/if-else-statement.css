@@ -10,3 +10,10 @@ select, option {
 option {
     padding: 10px 0;
 }
+
+p {
+    border-radius: 5px;
+    padding: 10px 0 10px 20px;
+    max-width: 500px;
+    background-color: grey;
+}
