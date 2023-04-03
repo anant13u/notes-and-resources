@@ -17,3 +17,7 @@ p {
     max-width: 500px;
     background-color: grey;
 }
+
+p:empty {
+    padding: 0;
+}
