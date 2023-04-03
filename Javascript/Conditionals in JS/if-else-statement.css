@@ -13,9 +13,9 @@ option {
 
 p {
     border-radius: 5px;
-    padding: 10px 0 10px 20px;
+    padding: 10px 10px 10px 20px;
     max-width: 500px;
-    background-color: grey;
+    background-color: #ebedf0;
 }
 
 p:empty {
