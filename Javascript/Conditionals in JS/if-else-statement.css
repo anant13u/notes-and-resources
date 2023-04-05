@@ -3,8 +3,26 @@ body {
     font-size: 22px;
 }
 
+.parent {
+    /* border: 2px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+}
+
+.child1 {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+}
+
+.child2 {
+    display: flex;
+    justify-content: center;
+}
+
 select, option {
     font-size: 18px;
+    margin-left: 15px;
 }
 
 option {
@@ -12,9 +30,11 @@ option {
 }
 
 p {
+    border: 2px solid greenyellow;
     border-radius: 5px;
     padding: 10px 10px 10px 20px;
-    max-width: 500px;
+    max-width: 700px;
+    text-align: center;
     background-color: #ebedf0;
 }
 
