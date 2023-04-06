@@ -29,7 +29,7 @@
         const select = document.querySelector('select')
         const para = document.querySelector('p')
         var myImg = document.querySelector('img')
-        myImg.width= 750
+        // myImg.width= 750
 
         select.addEventListener("change",setWeather)
 
@@ -38,15 +38,15 @@
 
             if (choice=='sunny') {
                 para.textContent = "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream."
-                myImg.src='sunny-images.jpeg'
+                myImg.src='tadeusz-lakota-QDShpt3r_4g-unsplash.jpg'
             }
             else if (choice=='raining') {
                 para.textContent="Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long."
-                myImg.src='raining-.jpg'
+                myImg.src='gage-walker-6LT0b6LmCt4-unsplash.jpg'
             }
             else if (choice=='snowing') {
                 para.textContent="The snow is coming down - it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman."
-                myImg.src='snowing_8b6a85885f8a77ec.jpg'
+                myImg.src='bank-phrom-6ocs_fghNQg-unsplash.jpg'
             }
             else if (choice=='overcast') {
                 para.textContent="It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case."
