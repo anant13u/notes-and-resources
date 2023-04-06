@@ -16,21 +16,21 @@ body {
         justify-content: center;
     }
 
+        select, option {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        
+        option {
+            padding: 10px 0;
+        }
+    
     .child2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         
     }
-
-        select, option {
-            font-size: 18px;
-            margin-left: 15px;
-        }
-
-            option {
-                padding: 10px 0;
-            }
 
         p {
             border: 2px solid greenyellow;
