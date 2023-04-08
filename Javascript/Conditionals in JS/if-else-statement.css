@@ -16,13 +16,20 @@ body {
         justify-content: center;
     }
 
+        label {
+            /* border: 2px solid firebrick; */
+            padding: 3px 0 0;
+        }
+
         select, option {
             font-size: 18px;
             margin-left: 15px;
         }
         
         select {
+            /* border: 3px solid grey; */
             padding: 5px 0 5px 5px;
+            background-color: aliceblue;
         }
 
     .child2 {
