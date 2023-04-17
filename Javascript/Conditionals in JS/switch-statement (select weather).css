@@ -1,0 +1,42 @@
+body {
+    font-size: 18px;
+}
+
+
+.grandparent {
+    /* border: 2px solid greenyellow; */
+    /* border: 2px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    min-height: 800px;
+
+}
+
+    .parent {
+        margin: 30px 0 0;
+        /* border: 2px solid salmon; */
+        display: flex;
+        gap: 10px;
+    }
+
+/* height: 40px; */
+
+        select {
+            height: 20px;
+            font-size: 16px;
+        }
+
+    #weather-text {
+        /* border: 2px solid salmon; */
+        width: 450px;
+        text-align: center;
+        /* font-size: 18px; */
+    }
+
+    #weather-image {
+        /* border: 2px solid salmon; */
+        width: 450px;
+    }
