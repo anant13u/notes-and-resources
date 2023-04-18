@@ -1,0 +1,52 @@
+https://blog.webdevsimplified.com/2020-09/arrow-functions/
+
+
+
+
+Single Parameter Arrow Functions:
+
+One nice feature of arrow functions is if you only have one parameter in the function you 
+can leave out the parenthesis around the parameters.
+
+function isPositive(number) {
+  return number >= 0
+}
+
+const isPositive = number => {
+  return number >= 0
+}
+
+
+
+
+Implicit Return:
+
+Another really nice feature of arrow functions is that they support implicit return. 
+This means if you only have one line in your function which is returning something you 
+can put it on one line without the return statement.
+
+function randomNumber() {
+  return Math.random()
+}
+
+const randomNumber = () => Math.random()
+
+As you can see the Math.random() code is on the same line as the function declaration and 
+this means that the result of Math.random() is automatically returned from the function. 
+You also may notice that since randomNumber has no parameters an empty set of parenthesis 
+is used to denote the fact there are no parameters.
+
+
+
+
+Anonymous Arrow Functions:
+
+My favorite way to use arrow functions is with anonymous functions since you can leave out the 
+entire name and variable declaration of the function. This makes anonymous functions much cleaner.
+
+document.addEventListener('click', function() {
+  console.log('Click')
+})
+document.addEventListener('click', () => {
+  console.log('Click')
+})
