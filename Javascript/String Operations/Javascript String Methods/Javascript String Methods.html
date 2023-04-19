@@ -63,7 +63,7 @@
                 let our_string = prompt('Please enter the string you want to slice: ')
                 const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
                 const our_slice_dest = prompt('The digit where you want to end slicing the string: ')
-                let our_sliced_text = our_string.slice(slice_source, our_slice_dest)
+                let our_sliced_text = our_string.slice(our_slice_source, our_slice_dest)
                 document.getElementById('our_string').innerHTML=our_string
                 document.getElementById('slice_source').innerHTML = our_slice_source
                 document.getElementById('slice_dest').innerHTML = our_slice_dest
