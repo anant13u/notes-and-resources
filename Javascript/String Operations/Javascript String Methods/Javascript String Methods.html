@@ -12,7 +12,7 @@
 <body>
     <h1>Javascript String Methods</h1>
 
-    <div class="methods-container">
+    <div class="main-methods-container">
         <div class="methods-container1">
             <p>String length</p>
             <p>String slice()</p>
@@ -38,55 +38,81 @@
         </div>
     </div>
 
-    <h2>The slice() Method</h2>
-    <p class="definition-syntax">slice() extracts a part of a string and returns the extracted part in a new string.
-    <p class="definition-syntax">Syntax: string.slice(start, end)</p>
-    <p>Text entered by the user: <span id="our_string"></span></p>
-    <p>Start digit for slicing: <span id="slice_source"></span></p>
-    <p>End digit for slicing: <span id="slice_dest"></span></p>
-    <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is: <span id="sliced-part"></span><br><br>
-    <button class="method-button" onclick="slice_text()">Slice Text</button>
+    <div class="child2">
+        <h2>The slice() Method</h2>
+        <p class="definition-syntax">slice() extracts a part of a string and returns the extracted part in a new string.
+        <p class="definition-syntax">Syntax: string.slice(start, end)</p>
+        <p>Text entered by the user: <span id="our_string"></span></p>
+        <p>Start digit for slicing: <span id="slice_source"></span></p>
+        <p>End digit for slicing: <span id="slice_dest"></span></p>
+        <p class="definition-syntax">Syntax for this example: <span id="syntaxThisCase"></span></p>
+        <p>The sliced (extracted) part of the string from <span id="slice_source"></span> (start position) to <span id="slice_dest"></span> (end position) is: <span id="sliced-part"></span><br><br>
+        <button class="method-button" onclick="slice_text()">Slice Text</button><button class="method-button" onclick="clearSliceText()">Clear</button>
+    </div>
 
-    <h2>Replacing string content with the replace() method</h2>
-    <p class="definition-syntax">The replace() method replaces a specified value with another value in a string.
-    <p class="definition-syntax">Syntax: string.replace(searchValue, newValue)</p>
-    <p>The text entered by the user: <b><span id="entered-text"></span></b>
-    <p>The string that is to be replaced: <b><span id="stringToBeReplaced"></span></b>
-    <p>The string that is the replacement for above string: <b><span id="replacementString"></span></b>
-    <p>New text: <b><span id="newText"></span></b><br><br>
-    <button class="method-button" id="replace-button" onclick="replace_text()">Replace Text</button>
+    <div class="child3">
+        <h2>Replacing string content with the replace() method</h2>
+        <p class="definition-syntax">The replace() method replaces a specified value with another value in a string.
+        <p class="definition-syntax">Syntax: string.replace(searchValue, newValue)</p>
+        <p>The text entered by the user: <b><span id="entered-text"></span></b>
+        <p>The string that is to be replaced: <b><span id="stringToBeReplaced"></span></b>
+        <p>The string that is the replacement for above string: <b><span id="replacementString"></span></b>
+        <p class="definition-syntax">Syntax for this example: <span id="syntaxThisCase2"></span></p>
+        <p>New text: <b><span id="newText"></span></b><br><br>
+        <button class="method-button" id="replace-button" onclick="replace_text()">Replace Text</button><button class="method-button" onclick="clearReplaceText()">Clear</button>
+    </div>
 
-        <script>
-            // Code for slice() method:
-            // let our_string='Please enter the string you want to slice: '
-            function slice_text() {
-                let our_string = prompt('Please enter the string you want to slice: ')
-                const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
-                const our_slice_dest = prompt('The digit where you want to end slicing the string: ')
-                let our_sliced_text = our_string.slice(our_slice_source, our_slice_dest)
-                document.getElementById('our_string').innerHTML=our_string
-                document.getElementById('slice_source').innerHTML = our_slice_source
-                document.getElementById('slice_dest').innerHTML = our_slice_dest
-                document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
-            }
 
-            // Code for replace() method:
-            // Replacing string content
-            function replace_text() {
-                const btn = document.querySelector('Button')
+    <script>
+        // Code for slice() method:
+        // let our_string='Please enter the string you want to slice: '
+        function slice_text() {
+            let our_string = prompt('Please enter the string you want to slice: ')
+            const our_slice_source = prompt('The digit from where you want to start slicing the string: ')
+            const our_slice_dest = prompt('The digit where you want to end slicing the string: ')
+            let our_sliced_text = our_string.slice(our_slice_source, our_slice_dest)
 
-                let our_string2 = prompt('Please enter any text:')
-                const stringToBeReplaced = prompt('Please enter the string that needs to be replaced:')
-                const replacementString = prompt('Please enter the string that is the replacement for above string:')
-                let newText = our_string2.replace(stringToBeReplaced, replacementString)
-                document.getElementById('entered-text').innerHTML = our_string2
-                document.getElementById('stringToBeReplaced').innerHTML = stringToBeReplaced
-                document.getElementById('replacementString').innerHTML = replacementString
-                document.getElementById('newText').innerHTML = newText
-            }
+            document.getElementById('our_string').innerHTML=our_string
+            document.getElementById('slice_source').innerHTML = our_slice_source
+            document.getElementById('slice_dest').innerHTML = our_slice_dest
+            document.getElementById('sliced-part').innerHTML = `'${our_sliced_text}'`
+            document.getElementById('syntaxThisCase').innerHTML=`${our_string}.slice(${our_slice_source}, ${our_slice_dest})`
+        }
 
-            // document.addEventListener('click', replace_text)
-        </script>
+        function clearSliceText() {
+            document.getElementById('our_string').innerHTML= ''
+            document.getElementById('slice_source').innerHTML = ''
+            document.getElementById('slice_dest').innerHTML = ''
+            document.getElementById('sliced-part').innerHTML = ''
+            document.getElementById('syntaxThisCase').innerHTML= ''
+        }
+
+        // Code for replace() method:
+        // Replacing string content
+        function replace_text() {
+            const btn = document.querySelector('Button')
+
+            let our_string2 = prompt('Please enter any text:')
+            const stringToBeReplaced = prompt('Please enter the string that needs to be replaced:')
+            const replacementString = prompt('Please enter the string that is the replacement for above string:')
+            let newText = our_string2.replace(stringToBeReplaced, replacementString)
+            document.getElementById('entered-text').innerHTML = our_string2
+            document.getElementById('stringToBeReplaced').innerHTML = stringToBeReplaced
+            document.getElementById('replacementString').innerHTML = replacementString
+            document.getElementById('newText').innerHTML = newText
+            document.getElementById('syntaxThisCase2').innerHTML= `${our_string2}.replace(${stringToBeReplaced}, ${replacementString})`
+        }
+
+        function clearReplaceText() {
+            document.getElementById('entered-text').innerHTML = ''
+            document.getElementById('stringToBeReplaced').innerHTML = ''
+            document.getElementById('replacementString').innerHTML = ''
+            document.getElementById('newText').innerHTML = ''
+            document.getElementById('syntaxThisCase2').innerHTML= ''
+        }
+
+        // document.addEventListener('click', replace_text)
+    </script>
 </body>
 
 </html>
