@@ -1,0 +1,39 @@
+Retain Aspect Ratio of Image CSS
+
+
+
+img {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+
+
+
+
+<style>
+/* (A) FLEX LAYOUT */
+#flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+/* (B) IMAGES */
+#flex-gallery img {
+  width: 50%; /* 2 items per row, 100% / 2 = 50% */
+  height: auto;
+}
+</style>
+
+
+
+
+<img src="alpaca.jpg" style="width: 300px; height: auto;"/>
+<img src="alpaca.jpg" style="width: auto; height: 300px;"/>
+
+
+
+
+
