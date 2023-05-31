@@ -1,0 +1,42 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input-container {
+    margin: 2em;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+    .input-box {
+        /* border: 2px solid salmon; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .input-text {
+            text-align: center;
+        }
+
+    #create-div {
+        padding: 0.7em 1em;
+        font-weight: bold;
+    }
+
+.div-container {
+    margin: 3em 2em;
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+    .demo-div {
+        border-radius: 0.3em;
+        background: linear-gradient(to top right, salmon 33%, red 67%);
+    }
