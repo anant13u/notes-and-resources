@@ -13,7 +13,18 @@ function createDiv() {
     newDiv.style.height=`${heightInput.value}em`
     newDiv.style.width=`${widthInput.value}em`
     divContainer.appendChild(newDiv)
+
+    const divs = divContainer.querySelectorAll('.demo-div')
+    divs.forEach(div => {
+        div.addEventListener('click', () => {
+            const width = window.getComputedStyle(div).getPropertyValue('width')
+            const height = window.getComputedStyle(div).getPropertyValue('height')
+            console.log(width)
+            alert(`Width: ${width}\nHeight: ${height}`)
+        })
+    });
 }
+
 
 widthInput.addEventListener('keydown', event => {
     if (event.key=='Enter') {
