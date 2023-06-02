@@ -4,15 +4,15 @@ body {
 
 .input-container {
     margin: 2em;
-    /* border: 2px solid gold; */
+    border: 2px solid gold;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 2em;
 }
 
     .input-box {
-        /* border: 2px solid salmon; */
+        border: 2px solid salmon;
         display: flex;
         flex-direction: column;
         justify-content: center;
