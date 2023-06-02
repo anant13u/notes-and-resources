@@ -15,6 +15,12 @@ function createDiv() {
     divContainer.appendChild(newDiv)
 }
 
+widthInput.addEventListener('keydown', event => {
+    if (event.key=='Enter') {
+        createDiv()
+    }
+})
+
 widthInput.addEventListener('click', clearWidthInput)
 
 function clearWidthInput() {
@@ -22,6 +28,12 @@ function clearWidthInput() {
         widthInput.value=''
     }
 }
+
+heightInput.addEventListener('keydown', event => {
+    if (event.key=='Enter') {
+        createDiv()
+    }
+})
 
 heightInput.addEventListener('click', clearHeightInput)
 
