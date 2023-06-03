@@ -20,7 +20,7 @@ function createDiv() {
             const width = window.getComputedStyle(div).getPropertyValue('width')
             const height = window.getComputedStyle(div).getPropertyValue('height')
             console.log(width)
-            alert(`Width: ${width}\nHeight: ${height}`)
+            div.innerHTML=`Width: ${width}<br>Height: ${height}`
         })
     });
 }
