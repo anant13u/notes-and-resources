@@ -38,5 +38,10 @@ body {
 
     .demo-div {
         border-radius: 0.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.7;
         background: linear-gradient(to top right, salmon 33%, red 67%);
+        color: white;
     }
