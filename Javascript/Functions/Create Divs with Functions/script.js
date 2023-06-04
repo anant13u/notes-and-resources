@@ -17,10 +17,10 @@ function createDiv() {
     const divs = divContainer.querySelectorAll('.demo-div')
     divs.forEach(div => {
         div.addEventListener('click', () => {
-            const width = window.getComputedStyle(div).getPropertyValue('width')
-            const height = window.getComputedStyle(div).getPropertyValue('height')
+            const width = parseFloat(window.getComputedStyle(div).getPropertyValue('width'))
+            const height = parseFloat(window.getComputedStyle(div).getPropertyValue('height'))
             console.log(width)
-            div.innerHTML=`Width: ${width}<br>Height: ${height}`
+            div.innerHTML=`Width: ${width/16} em (${width} px)<br>Height: ${height/16} em (${height} px)`
         })
     });
 }
