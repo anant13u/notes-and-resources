@@ -1,5 +1,5 @@
 const input = document.querySelector('.numberInput');
-const para = document.querySelector('p');
+const para = document.querySelector('.output-para');
 
 function squared(num) {
     return num*num
