@@ -1,0 +1,20 @@
+.input-output-container {
+    margin: 1em;
+    /* border: 2px solid gold; */
+    /* padding: 1em; */
+}
+
+    .output-para {
+        /* margin: 1em 0 0 1em; */
+        /* border: 2px solid salmon; */
+        font-size: 1.1em;
+        line-height: 1.9;
+    }
+
+        .highlight {
+            border-radius: 0.4em;
+            padding: 0.2em 0.5em;
+            background-color: #f4b41a;
+            color: #143d59;
+            font-weight: bold;
+        }
