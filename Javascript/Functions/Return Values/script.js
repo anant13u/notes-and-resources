@@ -1,5 +1,6 @@
 const input = document.querySelector('.numberInput');
 const para = document.querySelector('.output-para');
+const showDialog = document.getElementById('show-dialog')
 
 function squared(num) {
     return num*num
@@ -25,7 +26,7 @@ function factorial(num) {
     return num
 }
 
-input.addEventListener("change", () => {
+showDialog.addEventListener("click", () => {
     const num = parseFloat(input.value);
     if (isNaN(num)) {
       para.textContent = "You need to enter a number!";
@@ -35,5 +36,6 @@ input.addEventListener("change", () => {
       para.innerHTML += `Square root of ${num} is <span class="highlight">${squareroot(num)}</span>.<br>`;
       para.innerHTML += `${num} factorial is <span class="highlight">${factorial(num)}</span>.`;
     }
-  });
+    document.getElementById('d').show()
+});
 
