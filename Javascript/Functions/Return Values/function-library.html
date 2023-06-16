@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width">
     <title>Function library example</title>
     <link rel="stylesheet" href="style.css">
-  <style>
-    input {
-      font-size: 2em;
-      margin: 10px 1px 0;
-    }
-  </style>
   </head>
 <body>
+
   <div class="input-output-container">
     <input class="numberInput" type="text">
-    <p class="output-para"></p>
+    <button id="show-dialog">Show Dialog</button>
   </div>
+  <!-- onclick="d.show()" -->
+
+  <dialog id="d">
+    <p class="output-para"></p>
+    <button id="close-dialog" onclick="d.close()">Close Dialog</button>
+  </dialog>
 
   <script src="script.js"></script>
 
