@@ -1,11 +1,13 @@
 .input-output-container {
     margin: 2em 1em;
-    border: 2px solid gold;
-    /* padding: 1em; */
+    /* border: 2px solid gold; */
+    border-radius: 2em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    background-color: #143d59;
 }
 
     .numberInput {
