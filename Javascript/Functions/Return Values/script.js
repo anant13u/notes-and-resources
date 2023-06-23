@@ -31,10 +31,10 @@ showDialog.addEventListener("click", () => {
     if (isNaN(num)) {
       para.textContent = "You need to enter a number!";
     } else {
-      para.innerHTML = `${num} squared is <span class="highlight">${squared(num)}</span>.<br>`;
-      para.innerHTML += `${num} cubed is <span class="highlight">${cubed(num)}</span>.<br>`;
-      para.innerHTML += `Square root of ${num} is <span class="highlight">${squareroot(num)}</span>.<br>`;
-      para.innerHTML += `${num} factorial is <span class="highlight">${factorial(num)}</span>.`;
+      para.innerHTML = `${num} squared is <span class="highlight">${squared(num)}</span><br>`;
+      para.innerHTML += `${num} cubed is <span class="highlight">${cubed(num)}</span><br>`;
+      para.innerHTML += `Square root of ${num} is <span class="highlight">${squareroot(num)}</span><br>`;
+      para.innerHTML += `${num} factorial is <span class="highlight">${factorial(num)}</span>`;
     }
     document.getElementById('d').show()
 });
