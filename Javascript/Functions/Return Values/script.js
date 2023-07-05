@@ -26,6 +26,12 @@ function factorial(num) {
     return num
 }
 
+input.addEventListener('click', ()=> {
+    if (input.value=='Enter a number here') {
+        input.value=''
+    }
+})
+
 showDialog.addEventListener("click", () => {
     const num = parseFloat(input.value);
     if (isNaN(num)) {
