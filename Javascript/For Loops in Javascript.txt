@@ -11,8 +11,6 @@ condition is true, the loop continues to execute. If the condition is false, the
 The iteration statement is executed at the end of each iteration of the loop, and it is used to update the loop variable.
 
 
-
-
 Here's an example of a for loop that prints the numbers 1 to 5:
 
 for (let i = 1; i <= 5; i++) {
