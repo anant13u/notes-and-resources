@@ -11,36 +11,36 @@ body {
     width: 750px;
 }
 
-h2 {
-    /* border: 2px solid firebrick; */
-    margin-bottom: 0;
-}
+    h2 {
+        /* border: 2px solid firebrick; */
+        margin-bottom: 0;
+    }
 
-.js-code {
-    margin: 10px 0;
-    padding: 20px;
-    padding-left: 40px;
-    background-color: #eeeef0;
-    font-size: 14.5px;
-    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
-}
+    .js-code {
+        margin: 10px 0;
+        padding: 20px;
+        padding-left: 40px;
+        background-color: #eeeef0;
+        font-size: 14.5px;
+        font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    }
 
-.js-function {
-    color: #dd4a68;
-}
+        .js-function {
+            color: #dd4a68;
+        }
 
-.js-keyword {
-    color: #07a;
-}
+        .js-keyword {
+            color: #07a;
+        }
 
-code {
-    padding: 3px 9px;
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'Roberto Mono', monospace;
-    background-color: #d0d0d5
-}
-
-li {
-    padding: 0 0 10px 0;
-    line-height: 1.5;
-}
+    li {
+        padding: 0 0 10px 0;
+        line-height: 1.5;
+    }
+        
+        code {
+            padding: 3px 9px;
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-family: 'Roberto Mono', monospace;
+            background-color: #d0d0d5
+        }
